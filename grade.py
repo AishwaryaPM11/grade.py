@@ -1,38 +1,21 @@
-mark = int(input("Enter student's mark: "))
+mark1 = int(input("Enter student's mark: "))
+mark2 = int(input("Enter student's mark: "))
+mark3= int(input("Enter student's mark: "))
+mark4= int(input("Enter student's mark: "))
+mark5= int(input("Enter student's mark: "))
+average=(mark1+mark2+mark3+mark4+mark5)/5
 
 
-if mark >= 90:
+
+
+if average >= 90:
     grade = 'A'
-elif mark >= 80:
+elif average >= 80:
     grade = 'B'
-elif mark >= 70:
+elif average >= 70:
     grade = 'C'
-elif mark >= 60:
+elif average >= 60:
     grade = 'D'
 else:
     grade = 'Fail'
 print(f"Grade: {grade}")
-def get_grade(average):
-    if average >= 90:
-        return 'A'
-    elif average >= 80:
-        return 'B'
-    elif average >= 70:
-        return 'C'
-    elif average >= 60:
-        return 'D'
-    else:
-        return 'Fail'
-
-if _name_ == "_main_":
-    marks = []
-
-    for i in range(1, 6):
-        mark = float(input(f"Enter marks for student {i}: "))
-        marks.append(mark)
-
-    average = compute_average(marks)
-    grade = get_grade(average)
-
-    print(f"\nAverage Marks: {average:.2f}")
-    print(f"Grade: {grade}")
